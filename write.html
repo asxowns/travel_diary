@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1500">
+  <link href="https://webfontworld.github.io/sandbox/SBAggro.css" rel="stylesheet">
+  <link href="https://webfontworld.github.io/NanumBarunGothic/NanumBarunGothic.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main_style.css">
+  <title>글쓰기</title>
+  <link rel="stylesheet" href="./css/w_css.css">
+</head>
+
+<body>
+  <!-- 헤더메뉴 -->
+
+  <div class="head">
+    <div class="logo">
+      <a href="./index.html"><img src="./img/logo.png" alt="로고"></a>
+    </div>
+    <div class="nav">
+      <ul class="nav_in">
+        <li><a href="./sub_1.html">여행일기란</a></li>
+        <li class="line">│</li>
+        <li>
+          <a href="./sub_2.html">여행혜택</a>
+          <ul class="sub">
+            <li><a href="./sub_2.html">교통혜택</a></li>
+            <li><a href="./sub_3.html">숙박혜택</a></li>
+            <li><a href="./sub_4.html">문화혜택</a></li>
+            <li><a href="./sub_5.html">여행트렌드</a></li>
+          </ul>
+        </li>
+        <li class="line">│</li>
+        <li><a href="./sub_6.html">후기게시판</a></li>
+      </ul>
+
+      <div class="sub_bg"></div>
+    </div>
+  </div>
+
+  <!-- 글쓰기 -->
+
+  <div class="board_wrap">
+    <div class="board_title">
+      <strong>글쓰기</strong>
+      <p>후기를 자유롭게 작성해보세요.</p>
+    </div>
+    <div class="board_write_wrap">
+      <div class="board_write">
+        <div class="w_title">
+          <dl>
+            <dt>제목</dt>
+            <dd><input type="text" placeholder="제목 입력"></dd>
+          </dl>
+        </div>
+        <div class="info">
+          <dl>
+            <dt>글쓴이</dt>
+            <dd><input type="text" placeholder="글쓴이 입력"></dd>
+          </dl>
+          <dl>
+            <dt>비밀번호</dt>
+            <dd><input type="password" placeholder="비밀번호 입력"></dd>
+          </dl>
+        </div>
+        <div class="cont">
+          <textarea placeholder="내용 입력"></textarea>
+        </div>
+      </div>
+      <div class="bt_wrap">
+        <a href="view.html" class="on">등록</a>
+        <a href="sub_6.html#review_board">취소</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <!-- 제이쿼리 라이브러리,수정X -->
+  <script src="script/scroll-fixed.js"></script>
+  <!--디자인에 맞게 수정-->
+  <script>
+    $(function () {
+      $(".nav").hover(function () {
+        $(".sub_bg, .sub").stop().slideToggle();
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 탭메뉴 꾸미기 */
+.tab {
+  width: 1440px;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'GangwonEduPower';
+  display: flex;
+  background: #fff;
+  border-radius: 15px;
+  position: absolute;
+  top: 769px;
+  left: calc(50% - 720px);
+  z-index: 99;
+  box-shadow: 0px 5px 10px #9e9e9e;
+}
+
+.tabnav {
+  overflow: hidden;
+  background: #4368AF;
+}
+.tabnav li{
+  width: 333px;
+}
+
+.tabnav li a {
+  display: block;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 2;
+  font-size: 35px;
+  color: #fff;
+}
+
+.tabnav li p {
+  font-size: 22px;
+  padding-top: 15px;
+}
+
+/* 탭메뉴 클릭했을 때 변화 꾸미기 */
+/* .tabnav li .active {
+  background: #fff;
+} */
+
+.tabnav li a.active {
+  background: #fff;
+  color: #4368AF;
+}
+
+/* 탭컨테츠 꾸미기 */
+.tabcontent {
+  width: calc(1440px - 333px);
+  background: #fff;
+  position: relative;
+  top: -1px;
+}
+
+#tab01 ul, #tab02 ul {
+  height: 226px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  padding:0 25px;
+}
+#tav01 ul li, #tav02 ul li{
+  width: 100%;
+  flex: 1;
+}
+#tab01 ul li a{
+  display: block;
+  color:#424242;
+  font-size: 35px;
+  padding: 20px;
+}
+#tab01 ul li a:hover, #tab02 ul li a:hover{
+  color:#4368AF;
+}
+.line{
+  color:#ccc;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+
+#tab02 ul li a{
+  display: block;
+  color:#424242;
+  font-size: 35px;
+  padding: 40px 50px;
+}

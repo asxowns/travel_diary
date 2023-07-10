@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1500">
+  <!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <!--<link href="이미지 파일 경로" rel="icon" type="image/png" sizes="32x32">파비콘-->
+  <link href="https://webfontworld.github.io/sandbox/SBAggro.css" rel="stylesheet">
+  <link href="https://webfontworld.github.io/NanumBarunGothic/NanumBarunGothic.css" rel="stylesheet">
+  <!-- 슬라이드 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <!--수정X-->
+  <link href="./css/slidebanner.css" rel="stylesheet" type="text/css">
+  <!--디자인에 맞게 수정-->
+  <link href="./css/gallery-center.css" rel="stylesheet" type="text/css">
+  <!--디자인에 맞게 수정-->
+  <link rel="stylesheet" href="./css/tab.css">
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://webfontworld.github.io/gangwon/GangwonEduPower.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/icon.css">
+  <link rel="stylesheet" href="./css/main_style.css">
+  <link rel="stylesheet" href="./css/sub_5.css">
+  <title>여행트렌드</title>
+</head>
+
+<body>
+  <!-- 헤더메뉴 -->
+
+  <div class="head">
+    <div class="logo">
+      <a href="./index.html"><img src="./img/logo.png" alt="로고"></a>
+    </div>
+    <div class="nav">
+      <ul class="nav_in">
+        <li><a href="./sub_1.html">여행일기란</a></li>
+        <li class="line">│</li>
+        <li>
+          <a href="./sub_2.html">여행혜택</a>
+          <ul class="sub">
+            <li><a href="./sub_2.html">교통혜택</a></li>
+            <li><a href="./sub_3.html">숙박혜택</a></li>
+            <li><a href="./sub_4.html">문화혜택</a></li>
+            <li><a href="./sub_5.html">여행트렌드</a></li>
+          </ul>
+        </li>
+        <li class="line">│</li>
+        <li><a href="./sub_6.html">후기게시판</a></li>
+      </ul>
+
+      <div class="sub_bg"></div>
+    </div>
+  </div>
+
+  <!-- 사이드메뉴바 -->
+
+  <div class="side">
+    <p>여행일기의 다양한</p>
+    <h1>
+      여행정보와 여행혜택을 <br>
+      확인해 보세요!
+    </h1>
+
+    <!--tab-->
+    <div class="tab">
+      <ul class="tabnav">
+        <li><a href="#tab01">프로그램별</a></li>
+        <li><a href="#tab02">지역별</a></li>
+      </ul>
+      <div class="tabcontent">
+        <div id="tab01">
+          <ul>
+            <li class="trf">
+              <a href="./sub_2.html">
+                <img src="./img/b_traffic_w.png" alt="이미지1">
+                교통혜택</a>
+            </li>
+            <li class="hou">
+              <a href="./sub_3.html">
+                <img src="./img/b_hotel_w.png" alt="이미지1">
+                숙박혜택</a>
+            </li>
+            <li class="cul">
+              <a href="./sub_4.html">
+                <img src="./img/b_culture_w.png" alt="이미지1">
+                문화혜택</a>
+            </li>
+            <li class="tre">
+              <a href="./sub_5.html">
+                <img src="./img/b_trend_w.png" alt="이미지1">
+                여행트렌드</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div id="tab02"></div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 메인배너 -->
+  <div class="intro">
+    <h2>해보고 싶은 다양한 여행</h2>
+    <h1>여행트렌드</h1>
+    <p>
+      로컬관광, 취미여행 등 올해 주목할 만 한 여행 트렌드와<br>
+      한국 관광공사가 제안하는 특별한 여행프로그램을 만나보세요.
+    </p>
+  </div>
+
+  <div class="contents">
+    <!-- 배너밑 리스트 -->
+    <div class="t_list">
+      <ul>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_all_icon.png" alt="전체" onmouseover="this.src='./img/t_all_icon(g).png'"
+              onmouseout="this.src='./img/t_all_icon.png'">
+          </a>
+        </li>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_island_icon.png" alt="촌캉스/섬관광" onmouseover="this.src='./img/t_island_icon(g).png'"
+              onmouseout="this.src='./img/t_island_icon.png'">
+          </a>
+        </li>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_healing_icon.png" alt="힐링/웰니스" onmouseover="this.src='./img/t_healing_icon(g).png'"
+              onmouseout="this.src='./img/t_healing_icon.png'">
+          </a>
+        </li>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_eco_icon.png" alt="친환경" onmouseover="this.src='./img/t_eco_icon(g).png'"
+              onmouseout="this.src='./img/t_eco_icon.png'">
+          </a>
+        </li>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_live_icon.png" alt="살아보기" onmouseover="this.src='./img/t_live_icon(g).png'"
+              onmouseout="this.src='./img/t_live_icon.png'">
+          </a>
+        </li>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_open_icon.png" alt="열린관광" onmouseover="this.src='./img/t_open_icon(g).png'"
+              onmouseout="this.src='./img/t_open_icon.png'">
+          </a>
+        </li>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_k-culture_icon.png" alt="k-culture" onmouseover="this.src='./img/t_k-culture_icon(g).png'"
+              onmouseout="this.src='./img/t_k-culture_icon.png'">
+          </a>
+        </li>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_sports_icon.png" alt="스포츠" onmouseover="this.src='./img/t_sports_icon(g).png'"
+              onmouseout="this.src='./img/t_sports_icon.png'">
+          </a>
+        </li>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_hobby_icon.png" alt="취미" onmouseover="this.src='./img/t_hobby_icon(g).png'"
+              onmouseout="this.src='./img/t_hobby_icon.png'">
+          </a>
+        </li>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_food_icon.png" alt="미식여행" onmouseover="this.src='./img/t_food_icon(g).png'"
+              onmouseout="this.src='./img/t_food_icon.png'">
+          </a>
+        </li>
+        <li>
+          <a href="#list01">
+            <img src="./img/t_pet_icon.png" alt="반려동물" onmouseover="this.src='./img/t_pet_icon(g).png'"
+              onmouseout="this.src='./img/t_pet_icon.png'">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 콘텐츠 내용 -->
+    <div class="list_in">
+      <div id="list01">
+
+        <!-- 슬라이드 구문 -->
+        <div class="swiper-container gallery">
+          <div class="gallery_inner">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <p>여행트렌드 1</p>
+                <h2>촌캉스/섬관광</h2>
+                <h3>엔데믹 이후 번잡하고 답답한 도시를 벗어나<br>
+                  휴식과 함께 새로운 경험, 잊지 못할<br>
+                  추억을 만드는<br>
+                  촌캉스/섬관광입니다.
+                </h3>
+                <a href="#">여행 프로그램 확인하기 ➪</a>
+              </div>
+
+              <div class="swiper-slide">
+                  <p>여행트렌드 2</p>
+                <h2>힐링/웰니스</h2>
+                <h3>일상에 지친 심신을 위로하고 치유하는<br>
+                  여행일기가 추천하는<br>
+                  힐링/웰니스 관광 입니다.
+                </h3>
+                <a href="#">여행 프로그램 확인하기 ➪</a>
+              </div>
+
+              <div class="swiper-slide">
+                <p>여행트렌드 3</p>
+                <h2>친환경여행</h2>
+                <h3>환경이슈에 대한 관심이 증가하는 추세에<br>
+                  맞추어 플로깅, 해변정화<br>
+                  무동력 수단 이용등 작지만<br>
+                  의미있는 탄소줄이기를 실천해 보세요.
+                </h3>
+                <a href="#">여행 프로그램 확인하기 ➪</a>
+              </div>
+
+              <div class="swiper-slide">
+                  <p>여행트렌드 4</p>
+                <h2>살아보기여행(생활관광)</h2>
+                <h3>거주지가 아닌 다른 지역에서, 현지에서만<br>
+                  경험할 수 있는 먹거리와 볼거리,<br>
+                  문화를 즐기고, 현지인처럼 살아보는 듯한<br>
+                  감성을 느껴보는 여행입니다.
+                </h3>
+                <a href="#">여행 프로그램 확인하기 ➪</a>
+              </div>
+
+              <div class="swiper-slide">
+                  <p>여행트렌드 5</p>
+                <h2>열린관광</h2>
+                <h3>누구나 누릴 수 있는 모두를 위한 <br>장애물 없는 관광 "열린관광"<br>
+                  열린관광지를 따라 편안하고 안전한 여행을<br>
+                  하세요.<br>
+                </h3>
+                <a href="#">여행 프로그램 확인하기 ➪</a>
+              </div>
+
+              <div class="swiper-slide">
+                  <p>여행트렌드 6</p>
+                <h2>K-CULTURE</h2>
+                <h3>케이팝, 드라마를 넘어 이제는 예술, 예능,<br>
+                  뷰티까지 K-Culture는 계속해서<br>
+                  확장하고 있습니다. K-Culture 200% 즐기러<br>
+                  떠나보세요!
+                </h3>
+                <a href="#">여행 프로그램 확인하기 ➪</a>
+              </div>
+
+              <div class="swiper-slide">
+                  <p>여행트렌드 7</p>
+                <h2>스포츠케이션</h2>
+                <h3>걷기, 등산 등 야외활동과 서핑, 골프 등 국내<br>
+                  다양한 아웃도어 레저여행을<br>
+                  알려드립니다.
+                </h3>
+                <a href="#">여행 프로그램 확인하기 ➪</a>
+              </div>
+
+              <div class="swiper-slide">
+                  <p>여행트렌드 8</p>
+                <h2>취미여행</h2>
+                <h3>나만의 취미를 여행과 함께 즐길 수 있습니다.<br>
+                  내 취미에 맞는 여행이 있는지 찾아보세요.<br>
+                </h3>
+                <a href="#">여행 프로그램 확인하기 ➪</a>
+              </div>
+
+              <div class="swiper-slide">
+                  <p>여행트렌드 9</p>
+                <h2>미식여행</h2>
+                <h3>지역의 숨겨진 맛을 찾아 떠나는 오감만족<br>
+                  식도락 미식여행입니다.
+                </h3>
+                <a href="#">여행 프로그램 확인하기 ➪</a>
+              </div>
+
+              <div class="swiper-slide">
+                <p>여행트렌드 10</p>
+              <h2>반려동물동반여행</h2>
+              <h3>반려동물과 함께 행복한 추억을 쌓을 수<br>
+                있는 추천여행지를 소개합니다.
+              </h3>
+              <a href="#">여행 프로그램 확인하기 ➪</a>
+            </div>
+            </div>
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination"></div>
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+
+        <!-- 배너영역 -->
+        <div class="banner">
+          <h1>해보고 싶은 여행 떠나보기</h1>
+          <ul>
+            <li><a href="#">
+              <img src="./img/trend_banner1.png" alt="b1">
+              <h3>[살아보기여행(생활관광)]</h3>
+              <p>예약신청기간 : 04/06~11/09</p>
+              <h2><span>[함양]</span> 여행을 일상처럼, 함양 온데이 (3박4일)</h2>
+              <p><b>108,000원~</b> │ 숙박</p>
+            </a></li>
+
+            <li><a href="#">
+              <img src="./img/trend_banner2.png" alt="b1">
+              <h3>[친환경여행, 살아보기여행(생활관광)]</h3>
+              <p>예약신청기간 : 05/17~07/04</p>
+              <h2><span>[밀양]</span> 만석꾼이 사랑한 생활신조 따라하기</h2>
+              <p><b>94,000원~</b> │ 숙박</p>
+            </a></li>
+
+            <li><a href="#">
+              <img src="./img/trend_banner3.png" alt="b1">
+              <h3>[취미여행]</h3>
+              <h2>음악, 여행이 되다!</h2>
+            </a></li>
+
+            <li><a href="#">
+              <img src="./img/trend_banner4.png" alt="b1">
+              <h3>[친환경여행]</h3>
+              <p>예약신청기간 : 05/16~07/15</p>
+              <h2><span>[인천]</span> 둘러보섬, 대이작도 ECO트레킹!</h2>
+            </a></li>
+
+            <li><a href="#">
+              <img src="./img/trend_banner5.png" alt="b1">
+              <h3>[살아보기여행(생활관광), 반려동물동반여행]</h3>
+              <p>예약신청기간 : 05/26~12/31</p>
+              <h2><span>[충주]</span> 충주로oh개! (2박3일)</h2>
+              <p><b>140,000원~</b> │ 숙박</p>
+            </a></li>
+
+            <li><a href="#">
+              <img src="./img/trend_banner6.png" alt="b1">
+              <h3>[K-Culture]</h3>
+              <h2>BTS 순례지로 다시 태어난 삼척</h2>
+            </a></li>
+
+            <li><a href="#">
+              <img src="./img/trend_banner_finish1.png" alt="b1">
+              <h3>[살아보기여행(생활관광)</h3>
+              <p>예약신청기간 : 05/01~06/01</p>
+              <h2><span>[청주]</span>청주 문의와유 (2박3일)</h2>
+              <p><b>130,000원~</b> │ 숙박</p>
+            </a></li>
+
+            <li><a href="#">
+              <img src="./img/trend_banner_finish2.png" alt="b1">
+              <h3>[살아보기여행(생활관광)</h3>
+              <p>예약신청기간 : 03/15~06/15</p>
+              <h2><span>[사천]</span> 별주부전 고향 비토썸 (2박3일)</h2>
+              <p><b>95,000원~</b> │ 숙박</p>
+            </a></li>
+
+            <li><a href="#">
+              <img src="./img/trend_banner_finish3.png" alt="b1">
+              <h3>[살아보기여행(생활관광)</h3>
+              <p>예약신청기간 : 05/10~06/10</p>
+              <h2><span>[예산]</span> 대흥에서의 더 느린여행 (2박3일)</h2>
+              <p><b>110,000원~</b> │ 숙박</p>
+            </a></li>
+
+          </ul>
+        </div>
+
+      </div>
+      <!-- <div id="list02">내용2</div>
+      <div id="list03">내용3</div>
+      <div id="list04">내용4</div> -->
+    </div>
+
+
+  </div>
+
+
+
+
+  <!-- 푸터 -->
+
+  <footer>
+    <div class="foot">
+      <div class="fot_logo">
+        <img src="./img/foot_logo.png" alt="logo">
+      </div>
+
+      <div class="fot_text">
+        <p>
+          <span> 부산광역시 중구 중앙대로 26 다원중앙타워 </span>
+          <span> 여행일기(주) 대표이사 : 김태준 </span>
+        </p>
+        <p>
+          <span> TEL.010-8471-2165 </span>
+          <span> FAX.010-8471-2165 </span>
+          <span> E-MAIL.1000pgm@gmail.com </span>
+        </p>
+      </div>
+
+      <div class="icon">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./img/facebook_icon.png" alt="1">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/insta_icon.png" alt="2">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/twitter_icon.png" alt="3">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/youtube_icon.png" alt="4">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 탑버튼 -->
+
+  <a href="#" class="top"><img src="./img/top.png" alt="top버튼"></a>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <!-- 제이쿼리 라이브러리,수정X -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script><!-- 수정X -->
+  <script src="./script/gallery.js"></script><!--디자인에 맞게 수정-->
+  <script src="script/scroll-fixed.js"></script>
+  <!--디자인에 맞게 수정-->
+  <script src="script/icon.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- aos 라이브러리 -->
+  <script src="script/aos.js"></script>
+  <!-- aos 소스 -->
+  <script src="./script/cul_tab.js"></script>
+  <script src="./script/tab.js"></script>
+
+  <script>
+    $(function () {
+      $(".nav").hover(function () {
+        $(".sub_bg, .sub").stop().slideToggle();
+      });
+    });
+
+    $(function () {
+      $(".list_in > div").hide();
+      $(".t_list ul a")
+        .click(function () {
+          $(".list_in > div").hide().filter(this.hash).fadeIn();
+          $(".t_list ul a").removeClass("active");
+          $(this).addClass("active");
+          return false;
+        })
+        .filter(":eq(0)")
+        .click();
+    });
+  </script>
+</body>
+
+</html>
