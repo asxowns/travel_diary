@@ -6,6 +6,10 @@
 body {
   font-family: "SBAggro", "NanumBarunGothic";
   min-width:1440px;
+  height: auto;
+  min-height: 100vh;
+  padding-bottom: 350px;
+  position: relative;
 }
 
 ul {
@@ -359,11 +363,10 @@ a {
 /* 푸터 */
 
 footer {
-  position:relative;
+  position:absolute;
   width: 100%;
   background: #414141;
   z-index: 99;
-  margin-top: 200px;
   left: 0;
   bottom: 0;
 }
